@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amaru's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div href="home" class="logo">Amaru</div>
+      <ul class="nav-links">
+        <!-- <li><a href="#home">Home</a></li> -->
+        <li><a href="#about-category">About</a></li>
+        <li><a href="#skills-category">Skills</a></li>
+        <li><a href="#projects-category">Projects</a></li>
+        <li><a href="#experience-category">Experience</a></li>
+        <li><a href="#contact-category">Contact</a></li>
+        <li>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en">🇬🇧 English</option>
+            <option value="qh">◻️Qhichwa</option>
+          </select>
+        </li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle dark/light mode">
+            <span id="theme-icon">🌙</span>
+          </button>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open navigation">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="home">
+
+    <!-- About me/Hero -->
+    <div id="about-category"><br>
+      <!-- <div class="container"> -->
+      <div class="center">
+        <img src="images/inkaprunapchirunnin.png" alt="Avatar" class="avatar" />
+      </div>
+      <div class="center">
+        <h1 data-i18n="about_greet">Hello👋, I'm <span class="highlight">Amaru</span></h1>
+      </div>
+      <div>
+        <p id="p-shadow" data-i18n="about_desc">
+          A passionate <span class="field-highlight">software engineer</span> specialising in web technologies. I love
+          building scalable,
+          performant, and accessible applications that make a difference. <br><br>My journey started with curiosity for
+          code
+          and
+          evolved into a career delivering impactful digital solutions.
+        </p> <br>
+      </div>
+      <div class="btn-align">
+        <a href="#contact-category" class="cta-btn">Get in Touch</a>
+        <a href="#projects-category" class="cta-btn">View Projects</a>
+      </div><br>
+      <!-- </div> -->
+    </div>
+
+    <!-- Skill -->
+    <div id="skills-category" class="skills-center">
+      <!-- <div class="container"> -->
+      <h2 class="center" data-i18n="skills_title">Skills</h2>
+      <ul class="skills-list">
+        <li>JavaScript</li>
+        <li>HTML5 & CSS</li>
+        <li>Python</li>
+        <li>SQLite</li>
+        <li>Django</li>
+        <li>Java</li>
+        <li>REST APIs</li>
+        <li>Testing (Jest, Cypress)</li>
+        <li>CI/CD</li>
+        <li>Accessibility</li>
+      </ul>
+      <!-- </div> -->
+    </div>
+
+    <!-- Project -->
+    <div id="projects-category">
+      <!-- <div class="container"> -->
+      <h2 class="center" data-i18n="projects_title">Projects</h2>
+      <div class="projects-list">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>...</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="https://github.com/Wakichiq" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>...</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="https://github.com/Wakichiq" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Three</h3>
+          <p>...</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="https://github.com/Wakichiq" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <!-- Experience -->
+    <div id="experience-category">
+      <!-- <div class="container"> -->
+      <h2 class="center" class="center" data-i18n="experience_title">Experience</h2>
+      <div class="exp-timeline">
+        <div class="exp-timeline-list">
+          <span class="exp-timeline-date">2023 – Present</span>
+          <div class="exp-timeline-content">
+            <h3>Senior Software Engineer – Company A</h3>
+            <ul>
+              <li>...</li>
+              <li>...</li>
+              <li>...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-timeline-list">
+          <span class="exp-timeline-date">2021 – 2023</span>
+          <div class="exp-timeline-content">
+            <h3>Junior Software Engineer – Company B</h3>
+            <ul>
+              <li>...</li>
+              <li>...</li>
+              <li>...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-timeline-list">
+          <span class="exp-timeline-date">2021 – 2023</span>
+          <div class="exp-timeline-content">
+            <h3>Intern Software Engineer – Company C</h3>
+            <ul>
+              <li>...</li>
+              <li>...</li>
+              <li>...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <!-- Contact -->
+    <div id="contact-category">
+      <!-- <div class="container"> -->
+      <h2 class="center" data-i18n="contact_title">Contact</h2>
+      <div id="contact-card">
+        <form id="contact-form" autocomplete="off">
+          <label>
+            Full Name:
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message:
+            <textarea name="message" required></textarea>
+          </label>
+          <button type="submit" class="cta-btn">Send</button>
+          <div id="form-status"></div>
+        </form>
+      </div>
+      <!-- </div> -->
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Amaru. All rights reserved.</p>
+  </footer>
+  <script src="script/index.js"></script>
+</body>
+
+</html>

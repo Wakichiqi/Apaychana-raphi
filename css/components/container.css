@@ -1,0 +1,272 @@
+/* For containerisation */
+/* .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+} */
+
+/* About me */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  box-shadow: var(--card-shadow);
+  border: 2px solid var(--primary);
+}
+
+/* Highlight name */
+.highlight {
+  color: var(--primary);
+}
+
+/* About description paragraph shadow */
+/* #p-shadow {
+    text-shadow: 0px 0px 5px var(--white-shadow);
+}  */
+
+.field-highlight {
+    font-weight: bold;
+    /* color: var(--primary); */
+}
+
+/* About bottons centering */
+.btn-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+/* Bottons */
+.cta-btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: var(--transition), color var(--transition);
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background: #4338ca;
+}
+
+/* Skills */
+.skills-center {
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-list li {
+  background: var(--card-bg);
+  border: 0.5px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+  box-shadow: var(--card-shadow);
+}
+
+/* Projects */
+.projects-category {
+    background: var(--primary);
+    padding: 1rem;
+    border: 25px solid var(--border);
+    border-radius: 6px;
+}
+
+.projects-category a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #333;
+    text-decoration: underline;
+}
+
+.projects-category h3 {
+    margin-top: 0;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.2s, 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: var(--card-shadow);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: var(--text);
+}
+
+.project-card p {
+    color: var(--text);
+    flex: 1;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.project-tech span {
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.project-card a {
+    margin-top: 1rem;
+    color: var(--primary);
+    text-decoration: none;
+    /* font-weight: bold; */
+    align-self: start;
+}
+
+.project-card a:hover, .project-card a:focus {
+  text-decoration: underline;
+}
+
+/* Experience */
+.exp-timeline {
+    /* Line implentation  */
+    border-left: 3px solid var(--primary);
+    margin-left: 0.5rem;
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.exp-timeline-list {
+    position: relative;
+}
+
+.exp-timeline-list::before {
+    content: '';
+    position: absolute;
+    left: -1.8em;
+    top: 0.2em;
+    width: 1em;
+    height: 1em;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.exp-timeline-date {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+/* Contact */
+#contact-card form {
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: var(--card-bg);
+  padding: 1.5rem 2rem;
+  border: 0.5px solid var(--border);
+  border-radius: 12px;
+}
+
+#contact-card label {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+#contact-card input, #contact-card textarea {
+  background: var(--background);
+  color: var(--text);
+  border: 0.5px solid var(--border);
+  border-radius: 5px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  transition: var(--transition);
+}
+
+#contact-card input:focus,
+#contact-card textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+#contact-card textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+#form-status {
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+/* Conditions */
+@media (max-width: 600px) {
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn-align {
+        flex-direction: column;
+        align-items: center;
+    }
+}
