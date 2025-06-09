@@ -1,7 +1,7 @@
-## Project Overview
+## Overview
 A slick, responsive software portfolio website using vanilla HTML, JavaScript, and CSS. The website should showcase professional skills, projects and experience.
 
-### Core Technologies
+### Technologies
 - HTML
 - JavaScript (No frameworks)
 - CSS (Grid and Flexbox)
