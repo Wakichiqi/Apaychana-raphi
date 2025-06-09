@@ -1,5 +1,5 @@
 ## Overview
-A slick, responsive software portfolio website using vanilla HTML, JavaScript, and CSS. The website should showcase professional skills, projects and experience.
+A slick, responsive software portfolio website using vanilla JavaScript, HTML and CSS. The website should showcase professional skills, projects and experience.
 
 ### Technologies
 - HTML
